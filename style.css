@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #F2DD3A;
+}
+
+@font-face {
+    font-family: 'Sohne Regular';
+    src: url(/assets/fonts/TestSohne-Regular.otf); format('otf')
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Bold';
+    src: url(/assets/fonts/TestSohne-Bold.otf); format('otf')
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne ExtraBold';
+    src: url(/assets/fonts/Sohne-ExtraBold.otf); format('otf')
+    font-weight: bolder;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body, main, section {
+    height: 100%;
+}
+
+body {
+    background: #F2DD3A;
+    font-family: 'Sohne Regular', Helvetica, Arial, sans-serif;
+}
+
+header {
+    backdrop-filter: blur(80px);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 3.125rem;
+    height: 4rem;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo-svg {
+    width: 16rem;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 6rem;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/assets/images/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero-content-left {
+    text-align: right;
+    font-family: 'Sohne ExtraBold', Helvetica, Arial, sans-serif;
+    font-size: 8.375rem;
+}
+
+.hero-content-right {
+    font-size: 2rem;
+    font-family: 'Sohne Bold', Helvetica, Arial, sans-serif;
+    min-width: 562px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 0.25em;
+}
+.button {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #444638;
+    font-size: 20px;
+    position: relative;
+    border-radius: 80em;
+    background-color: #11190c;
+    border: 0.125rem solid #11190c;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, fill 0.2s ease, transform 0.2s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    will-change: transform;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: clamp(1px, 5.3333333333vw, 40.96px);
+}
+.button:hover {
+    background-color: white;
+    border-color: white;
+    transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, fill 0.2s ease, transform 0.2s ease-in-out;
+    transform: scale(1.07);
+    will-change: transform;
+    color: #11190c;
+}
+.button:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%) rotate(10deg);
+    transform-origin: top left;
+    transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, fill 0.2s ease, transform 0.2s ease-in-out;
+    will-change: transform;
+    z-index: -1;
+    border-radius: 80em;
+    background-color: white;
+}
+.button:hover:after {
+    transform: translate(0);
+    z-index: 0;
+}
+.button > * {
+    position: relative;
+    z-index: 1;
+}
+.button-inner {
+    color: var(--primary);
+}
+.button:hover .button-inner {
+    color: #11190c;
+}
