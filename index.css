@@ -83,7 +83,7 @@ section {
 
 .nav-links a {
     background-position-y: -0%;
-    background-image: linear-gradient(180deg, transparent 50%, var(--primary) 50%) !important;
+    background-image: linear-gradient(180deg, transparent 50%, #006CE0 50%) !important;
     transition: all 0.1s ease;
     background-size: auto 190%;
     padding: 3px 0;
@@ -93,10 +93,12 @@ section {
 
 .nav-links a.active {
     background-position-y: 100%;
+    color: var(--primary);
 }
 
 .nav-links a:hover {
     background-position-y: 100%;
+    color: var(--primary);
     transition: all 0.1s ease;
 }
 
@@ -136,7 +138,6 @@ a {
     font-size: 1.25rem;
     position: relative;
     background-color: #11190c;
-    border: 0.125rem solid #11190c;
 
     transition: background-color 0.2s ease, border-color 0.2s ease,
     color 0.2s ease, fill 0.2s ease, transform 0.2s ease-in-out;
@@ -150,8 +151,8 @@ a {
 }
 
 .hero-button:hover {
-    background-color: white;
-    border-color: white;
+    background-color: #006CE0;
+    border-color: #006CE0;
     transition: background-color 0.2s ease, border-color 0.2s ease,
     color 0.2s ease, fill 0.2s ease, transform 0.2s ease-in-out;
     transform: scale(1.07);
@@ -174,7 +175,7 @@ a {
     will-change: transform;
     z-index: -1;
     border-radius: 80em;
-    background-color: white;
+    background-color: #006CE0;
 }
 .hero-button:hover:after {
     transform: translate(0);

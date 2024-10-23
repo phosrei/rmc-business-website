@@ -106,7 +106,7 @@ header {
 
     & a {
         background-position-y: -0%;
-        background-image: linear-gradient(180deg, transparent 50%, black 50%) !important;
+        background-image: linear-gradient(180deg, transparent 50%, #006CE0 50%) !important;
         transition: all 0.1s ease;
         background-size: auto 190%;
         padding: 3px 0;
@@ -115,12 +115,12 @@ header {
 
         &:hover {
             background-position-y: 100%;
-            color: white;
+            color: var(--primary);
             transition: all 0.1s ease;
         }
 
         &.active {
-            color: white;
+            color: var(--primary);
             background-position-y: 100%;
         }
     }
