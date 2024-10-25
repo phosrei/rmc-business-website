@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'Sohne Regular';
-    src: url(assets/fonts/TestSohne-Regular.otf); format('otf')
+    src: url(assets/fonts/TestSohne-Regular.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'Sohne Bold';
-    src: url(assets/fonts/TestSohne-Bold.otf); format('otf')
+    src: url(assets/fonts/TestSohne-Bold.otf) format('opentype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -26,8 +26,8 @@
 
 @font-face {
     font-family: 'Sohne ExtraBold';
-    src: url(assets/fonts/Sohne-ExtraBold.otf); format('otf')
-font-weight: bolder;
+    src: url(assets/fonts/Sohne-ExtraBold.otf) format('opentype');
+    font-weight: bolder;
     font-style: normal;
     font-display: swap;
 }
